@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     style="display:inline;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1">
+    <rect
+       style="display:inline;mix-blend-mode:normal;fill:#000000;fill-opacity:1;stroke-width:1.00157"
+       id="rect1"
+       width="47.995495"
+       height="22.834564"
+       x="0.0017495861"
+       y="0.0045727072" />
+    <rect
+       style="display:inline;fill:#1a1a1a;fill-opacity:1;stroke-width:0.845339"
+       id="rect3"
+       width="47.916027"
+       height="25.255486"
+       x="0.08397349"
+       y="22.744511" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-weight:600;font-size:16px;line-height:0;font-family:FreeSans;-inkscape-font-specification:'FreeSans Semi-Bold Italic';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:1.00157"
+       x="1.6912315"
+       y="14.861604"
+       id="text1"><tspan
+         x="1.6912315"
+         y="14.861604"
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:14.6667px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Ultra-Bold';fill:#ffffff;fill-opacity:1">REAL</tspan><tspan
+         x="1.6912315"
+         y="27.694967"
+         id="tspan3"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:14.6667px;line-height:0.5;font-family:Cantarell;-inkscape-font-specification:'Cantarell Light';fill:#ffffff;fill-opacity:1">ENV</tspan></text>
+  </g>
+</svg>

@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <header className={styles.headerComponent}>
             <div>
-                <Image src="/realenv.svg" alt="REAL ENV" width={38} height={38} />
+                <div className="text-lg bg-black font-extrabold  text-white px-2 py-1">REAL <span className="font-extralight">ENV</span></div>
                 <NavigationMenu className="hidden sm:block">
                     <NavigationMenuList>
                         <NavigationMenuItem>
@@ -28,7 +28,7 @@ const Header = () => {
                 </NavigationMenu>
             </div>
             <div>
-                <Button variant="outline" className="hidden sm:block rounded-full"><SunMoon/></Button>
+                <Button variant="outline" size={"icon-3xl"} className="fixed bottom-5 right-5 z-100 sm:relative sm:left-0 sm:bottom-0 sm:block rounded-full"><SunMoon size={"xl"}/></Button>
                 <Button variant="outline" className="sm:hidden"><Menu/></Button>
             </div>
         </header>

@@ -1,0 +1,8 @@
+@reference "tailwindcss";
+
+.headerComponent{
+    @apply flex w-full justify-between sm:px-[7vw] py-1 items-center;
+}
+.headerComponent > div{
+    @apply flex;
+}

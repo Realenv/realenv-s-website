@@ -60,7 +60,7 @@ const components: {title: string, sub: { title: string; href: string; descriptio
         ]
     },
     {
-        title: "projects & contributions",
+        title: "projects",
         sub: [
             {
                 title: "Next.js projects",
@@ -68,6 +68,11 @@ const components: {title: string, sub: { title: string; href: string; descriptio
                 description:
                 "For next.js practising, I'am just building this website from A to Z using modern web technologies, see more about what I'am using to create this website.",
             }
+        ]
+    },
+    {
+        title: "contributions",
+        sub: [
         ]
     },
 ]

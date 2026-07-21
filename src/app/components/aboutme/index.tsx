@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const AboutMe = () => {
   return (
-    <div className="flex hero-style gap-x-10">
+    <div className="flex hero-style gap-5 items-start flex-wrap sm:flex-nowrap">
         <Image src="/realenv.png" alt="RealEnv" width={256} height={256} className="rounded-full"/>
         <div className="flex flex-col gap-y-3.5">
           <p className="auto-sizing-base">Hi, Just tell me realenv, I would like to be more and more professional over the years, I am learning a lot of things, like coding in react, using next.js, i love rust, and I want to go to the MSU university of Moscou.</p>

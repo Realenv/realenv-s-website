@@ -40,6 +40,7 @@ const HomeCarousel = () => {
   ];
   return (
       <Carousel
+        opts={{loop:true}}
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
         className="w-full h-full"

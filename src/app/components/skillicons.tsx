@@ -1,8 +1,5 @@
-"use client";
 import React from "react";
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 const SkillIcons = () => {
     const svgIcons = [
@@ -17,23 +14,13 @@ const SkillIcons = () => {
         "git",
         "docker",
     ];
-  const plugin = React.useRef(
-    Autoplay({ delay: 0, stopOnInteraction: false })
-  )
+    var icons = [...svgIcons,...svgIcons].map((icon, index)=>{
+                return (<div className="max-w-[100px] " key={index}><Image className="icon-to-invert min-w-[100px] min-h-[100px] max-w-[100px] max-h-[100px]" src={`/icons/${icon}.svg`} height={100} width={100} alt={icon} key={index}/></div>)
+            });
   return (
-      <Carousel
-        opts={{loop:true, duration:2000}}
-        plugins={[plugin.current]}
-        onMouseEnter={plugin.current.stop}
-        className="w-full h-full"
-        onMouseLeave={plugin.current.reset}
-      >
-        <CarouselContent>
-          {svgIcons.map((icon, index)=>{
-                return (<CarouselItem className="max-w-[100px] " key={index}><Image src={`/icons/${icon}.svg`} height={100} width={100} alt={icon} key={index}/></CarouselItem>)
-            })}
-        </CarouselContent>
-      </Carousel>
+      <div className="to-animate-carousel flex overflow-clip justify-start items-start">
+          {icons}
+      </div>
   )
 }
 

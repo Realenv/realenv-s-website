@@ -6,9 +6,8 @@ import ComputerScience from "./components/computerscience";
 const Home = () => {
   return (
     <>
-      <div className="hero-style">
-        <HomeCarousel/>
-      </div>
+      <HomeCarousel/>
+      <div className="height-of-header bg-background/95 z-50 sticky top-0"></div>
       <AboutMe/>
       <ComputerScience/>
     </>

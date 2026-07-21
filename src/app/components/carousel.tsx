@@ -44,10 +44,11 @@ const HomeCarousel = () => {
         onMouseEnter={plugin.current.stop}
         className="w-full h-full"
         onMouseLeave={plugin.current.reset}
+        
       >
         <CarouselContent>
           {items.map((item, index) => (
-            <CarouselItem key={index} className="pt-[51px] sm:pt-[59px] md:pt-[65px] xl:pt-[75px] 2xl:pt-[85px] px-[10vw] sm:px-[15vw] xl:px-[25vw] box-border flex flex-col justify-center h-[100vh]" style={{background: item.bg}}>
+            <CarouselItem key={index} className="pt-[51px] sm:pt-[59px] md:pt-[65px] xl:pt-[75px] 2xl:pt-[85px] box-border flex flex-col justify-center h-[100vh] " style={{background: item.bg}}>
               
               <h2 className="pl-5 uppercase auto-sizing-h2 font-extrabold">{item.title}</h2>
               <p className="auto-sizing-hero-p font-light m-2">{item.description}</p>
@@ -58,6 +59,8 @@ const HomeCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselNext disabled={false}/>
+        <CarouselPrevious disabled={false}/>
       </Carousel>
   )
 }

@@ -1,9 +1,15 @@
 import React from "react";
 import HomeCarousel from "./components/carousel"
+import AboutMe from "./components/aboutme";
 
 const Home = () => {
   return (
-    <HomeCarousel/>
+    <>
+      <div className="hero-style">
+        <HomeCarousel/>
+      </div>
+      <AboutMe/>
+    </>
   )
 }
 export default Home;

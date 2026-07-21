@@ -1,6 +1,7 @@
 import React from "react";
-import HomeCarousel from "./components/carousel"
+import HomeCarousel from "./components/homecarousel"
 import AboutMe from "./components/aboutme";
+import ComputerScience from "./components/computerscience";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
         <HomeCarousel/>
       </div>
       <AboutMe/>
+      <ComputerScience/>
     </>
   )
 }

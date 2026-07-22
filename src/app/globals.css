@@ -91,7 +91,7 @@
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(62.793% 0.25768 29.223);
+  --primary-foreground: oklch(0.145 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
@@ -116,7 +116,10 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
-
+@keyframes to-animate{
+  from {left:-1000px;}
+  to {left:0px}
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -144,5 +147,16 @@
   }
   .hero-xl-style{
     @apply px-[7vw] sm:px-[11vw] xl:px-[20vw];
+  }
+  .dark .icon-to-invert{
+    filter:invert(1);
+    
+  }
+  .height-of-header{
+    @apply h-[51px] sm:h-[59px] md:h-[65px] xl:h-[75px] 2xl:h-[85px];
+  }
+  .to-animate-carousel{
+    position:relative;
+    animation: to-animate 4s infinite linear;
   }
 }

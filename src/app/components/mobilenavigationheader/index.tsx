@@ -1,38 +1,3 @@
-
-
-export function MobileNavigationHeader() {
-  return (
-    <Accordion defaultValue={["shipping"]} className="max-w-lg">
-      <AccordionItem value="shipping">
-        <AccordionTrigger>What are your shipping options?</AccordionTrigger>
-        <AccordionContent>
-          We offer standard (5-7 days), express (2-3 days), and overnight
-          shipping. Free shipping on international orders.
-        </AccordionContent>
-      </AccordionItem>
-      
-      <AccordionItem value="returns">
-        <AccordionTrigger>What is your return policy?</AccordionTrigger>
-        <AccordionContent>
-          Returns accepted within 30 days. Items must be unused and in original
-          packaging. Refunds processed within 5-7 business days.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="support">
-        <AccordionTrigger>How can I contact customer support?</AccordionTrigger>
-        <AccordionContent>
-          Reach us via email, live chat, or phone. We respond within 24 hours
-          during business days.
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
-  )
-}
-
-
-
-
-
 "use client"
 
 import * as React from "react"
@@ -44,14 +9,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
+import { Button } from "@/components/ui/button"
+import { XLineTop } from "lucide-react"
 
 const components: {title: string, sub: { title: string; href: string }[]}[] = [
     {
@@ -104,25 +63,28 @@ const components: {title: string, sub: { title: string; href: string }[]}[] = [
     },
 ]
 
-export function NavigationHeader() {
+export default function NavigationHeader(props: {setOpenMobileNav: React.Dispatch<React.SetStateAction<boolean>>}) {
   return (
-  <nav className="w-full fixed h-full bg-black">
+  <nav className="box-border max-w-[calc(100vw-25px)] w-[360px] p-5 overflow-y-auto h-screen top-0 bg-background/85">
+    <Button onClick={()=>{props.setOpenMobileNav(false)}}><XLineTop/></Button>
     <Accordion>
 
         {
             components.map((component, index) => (
-                <AccordionItem key={index} className="flex">
+                <AccordionItem key={index}>
                     <AccordionTrigger>{component.title}</AccordionTrigger>
                     <AccordionContent>
-                        <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                      <div className="flex flex-col gap-1">
                         {component.sub.map((subComponent, subIndex) => (
                             <Link
+                            key={subIndex}
                             href={subComponent.href}
+                            className="pl-3"
                             >
                               {subComponent.title}
                             </Link>
                         ))}
-                        </ul>
+                      </div>
                     </AccordionContent>
                 </AccordionItem>
             ))

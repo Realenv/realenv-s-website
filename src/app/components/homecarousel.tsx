@@ -67,7 +67,7 @@ const HomeCarousel = () => {
         >
           <CarouselContent >
             {items.map((item, index) => (
-              <CarouselItem key={index} className="pt-[51px] sm:pt-[59px] md:pt-[65px] xl:pt-[75px] 2xl:pt-[85px] box-border flex flex-col justify-center h-[100vh] ">
+              <CarouselItem key={index} className="box-border flex flex-col justify-center h-[100vh] ">
                 <h2 className="pl-5 uppercase auto-sizing-h2 font-extrabold">{item.title}</h2>
                 <p className="auto-sizing-hero-p font-light m-2">{item.description}</p>
                 <div className="flex flex-wrap gap-x-2 gap-y-1 justify-end gap-x-3">

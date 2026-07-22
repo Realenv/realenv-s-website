@@ -7,7 +7,7 @@ const ComputerScience = () => {
   return (
     <div className="mt-15 flex flex-col gap-y-5 justify-center">
         <h2 className="hero-xl-style auto-sizing-h2 font-extrabold uppercase mt-15">Computer science skills</h2>
-        <div className="max-w-[700px] flex justify-center">
+        <div className="w-full flex justify-center">
          <SkillIcons/>
         </div>
         <div className="hero-xl-style flex justify-end">

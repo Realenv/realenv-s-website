@@ -18,9 +18,11 @@ const SkillIcons = () => {
                 return (<div className="max-w-[100px] " key={index}><Image className="icon-to-invert min-w-[100px] min-h-[100px] max-w-[100px] max-h-[100px]" src={`/icons/${icon}.svg`} height={100} width={100} alt={icon} key={index}/></div>)
             });
   return (
-      <div className="to-animate-carousel flex overflow-clip justify-start items-start">
-          {icons}
-      </div>
+    <div className="max-w-[1000px] overflow-hidden">
+    <div className="to-animate-carousel flex justify-start items-start">
+        {icons}
+    </div>
+    </div>
   )
 }
 

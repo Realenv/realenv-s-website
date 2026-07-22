@@ -40,21 +40,21 @@ const HomeCarousel = () => {
       title: "Chinese",
       description: "I am learning the initial vocabulary list of the first band of the HSK3.0, because it is the largest recognized vocabulary list in chinese.",
       bg: "hsl(1 50% 50%)",
-      firstBtnText: "My learning Path",
-      secondBtnText: "About next.js"
+      firstBtnText: "Why initial HSK3.0 band 1",
+      secondBtnText: "My current level"
     },
     {
       title: "Russian",
       description: "I am learning TRKI 1, in my opinion, it is the best way to get certified in russian, I am currently learning by heart the official minimum vocabulary list to have a recognized B1 Level.",
       bg: "hsl(240 50% 50%)",
-      firstBtnText: "My learning Path",
-      secondBtnText: "About next.js"
+      firstBtnText: "Why TRKI 1",
+      secondBtnText: "My current level"
     }
   ];
   const [backgroundColor, setBackgroundColor] = React.useState(items[0].bg);
   return (
     <>
-      <div className="fixed  top-0 z-25"></div>
+      <div className="height-of-header w-full z-25 fixed top-0" style={{background: backgroundColor}}></div>
       <div className="hero-style" style={{background: backgroundColor}}>
         
         <Carousel

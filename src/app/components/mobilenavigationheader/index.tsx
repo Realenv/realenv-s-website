@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
-import { XLineTop } from "lucide-react"
+import { X } from "lucide-react"
 
 const components: {title: string, sub: { title: string; href: string }[]}[] = [
     {
@@ -18,15 +18,15 @@ const components: {title: string, sub: { title: string; href: string }[]}[] = [
         sub: [
             {
                 title: "Biography",
-                href: "/docs/primitives/alert-dialog",
+                href: "/aboutme/biography",
             },
             {
                 title: "Social media",
-                href: "/docs/primitives/hover-card",
+                href: "/aboutme/social-media",
             },
             {
                 title: "Phone & email",
-                href: "/docs/primitives/progress",
+                href: "/aboutme/phone-and-email",
             },
         ]
     },
@@ -35,15 +35,15 @@ const components: {title: string, sub: { title: string; href: string }[]}[] = [
         sub: [
             {
                 title: "Computer sciences",
-                href: "/computer-sciences",
+                href: "/skills/computer-sciences",
             },
             {
                 title: "Human languages",
-                href: "/human-languages",
+                href: "/skills/human-languages",
             },
             {
                 title: "Martial arts",
-                href: "/martial-arts",
+                href: "/skills/martial-arts",
             }
         ]
     },
@@ -52,7 +52,7 @@ const components: {title: string, sub: { title: string; href: string }[]}[] = [
         sub: [
             {
                 title: "Next.js projects",
-                href: "/docs/primitives/alert-dialog",
+                href: "/projects/nextjs",
             }
         ]
     },
@@ -65,8 +65,10 @@ const components: {title: string, sub: { title: string; href: string }[]}[] = [
 
 export default function NavigationHeader(props: {setOpenMobileNav: React.Dispatch<React.SetStateAction<boolean>>}) {
   return (
-  <nav className="box-border max-w-[calc(100vw-25px)] w-[360px] p-5 overflow-y-auto h-screen top-0 bg-background/85">
-    <Button onClick={()=>{props.setOpenMobileNav(false)}}><XLineTop/></Button>
+  <nav className="box-border flex flex-col gap-5 max-w-[calc(100vw-25px)] w-[360px] px-6 py-3 overflow-y-auto h-screen top-0 bg-background/85">
+    <div className="flex justify-start">
+        <Button onClick={()=>{props.setOpenMobileNav(false)}}><X/></Button>
+    </div>
     <Accordion>
 
         {

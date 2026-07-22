@@ -10,7 +10,7 @@ const ComputerScience = () => {
         <div className="w-full flex justify-center">
          <SkillIcons/>
         </div>
-        <div className="hero-xl-style flex justify-end">
+        <div className="hero-xl-style flex justify-end flex-wrap gap-x-2 gap-y-1">
             <Button variant={"outline"} size={"autoSizing"}>My Skills</Button>
             <Button size={"autoSizing"}>My Computer science Skills</Button>
         </div>

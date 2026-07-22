@@ -26,8 +26,10 @@ export default function RootLayout({
       lang="en"
       className={`h-full antialiased ${poppins.variable}`}
     >
-      <body className="min-h-full flex flex-col overflow-x-hidden">
+      <body className="min-h-full flex flex-col justify-between overflow-x-hidden">
         <Header/>
+
+      <div className="height-of-header w-full"></div>
         {children}
         <Footer/>
       </body>

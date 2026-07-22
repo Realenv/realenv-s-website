@@ -14,7 +14,7 @@ export default function MenuIconBtn () {
     }
     return (
         <>
-            <div style={{right: openMobileNav? "0px" : "-100vw"}} className="fixed top-0">
+            <div style={{right: openMobileNav? "0px" : "-100vw"}} className="fixed top-0 transition-all duration-550">
                 <MobileNavigationHeader setOpenMobileNav={setOpenMobileNav}/>
             </div>
             <Button onClick={toggleFunc}><MenuIcon/></Button>

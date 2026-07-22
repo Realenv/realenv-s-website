@@ -46,6 +46,9 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --breakpoint-2xs: 500px;
+  --breakpoint-xs: 350px;
+  --breakpoint-2lg: 1100px;
 }
 
 :root {
@@ -120,6 +123,10 @@
   from {left:-1000px;}
   to {left:0px}
 }
+@keyframes to-animate-2xl{
+  from {left:-2000px;}
+  to {left:0px}
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -146,7 +153,7 @@
     @apply px-[55px] sm:px-[15vw] xl:px-[25vw];
   }
   .hero-xl-style{
-    @apply px-[7vw] sm:px-[11vw] xl:px-[20vw];
+    @apply px-[55px] sm:px-[11vw] xl:px-[20vw];
   }
   .dark .icon-to-invert{
     filter:invert(1);
@@ -155,8 +162,18 @@
   .height-of-header{
     @apply h-[51px] sm:h-[59px] md:h-[65px] xl:h-[75px] 2xl:h-[85px];
   }
-  .to-animate-carousel{
+  .to-animate-carousel, .to-animate-2xl-carousel{
     position:relative;
-    animation: to-animate 4s infinite linear;
+  }
+  .to-animate-carousel{
+    animation: to-animate 21s infinite linear;
+  }
+  .to-animate-carousel:hover, .to-animate-2xl-carousel:hover{
+    animation-play-state:paused;
+  }
+}
+@media (min-width: 2000px){
+  .to-animate-carousel{
+    animation: to-animate-2xl 17s infinite linear;
   }
 }

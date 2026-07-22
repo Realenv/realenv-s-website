@@ -5,7 +5,7 @@ import SkillIcons from "../skillicons";
 
 const ComputerScience = () => {
   return (
-    <div className="mt-15 flex flex-col gap-y-5 justify-center">
+    <div className="flex flex-col gap-y-5 justify-center">
         <h2 className="hero-xl-style auto-sizing-h2 font-extrabold uppercase mt-15">Computer science skills</h2>
         <div className="w-full flex justify-center">
          <SkillIcons/>

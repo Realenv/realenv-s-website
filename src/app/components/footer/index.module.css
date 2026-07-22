@@ -1,0 +1,19 @@
+@reference "tailwindcss";
+@reference "../../globals.css";
+@layer utilities{
+    .footerStyle {
+        @apply p-15 flex bg-foreground text-background flex-wrap gap-19 justify-center;
+    }
+    .footerStyle > div {
+        @apply flex flex-col gap-4;
+    }
+    .footerStyle > div > h3{
+        @apply font-extrabold uppercase;
+    }
+    .footerStyle > div > div {
+        @apply flex flex-col font-light;
+    }
+    .footerStyle > div > div > * {
+        @apply flex;
+    }
+}

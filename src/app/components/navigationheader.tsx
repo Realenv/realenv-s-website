@@ -85,7 +85,7 @@ export function NavigationHeader() {
         {
             components.map((component, index) => (
                 <NavigationMenuItem key={index} className="flex">
-                    <NavigationMenuTrigger>{component.title}</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-2xl p-5">{component.title}</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                         {component.sub.map((subComponent, subIndex) => (
@@ -115,7 +115,7 @@ function ListItem({
 }: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
   return (
     <li {...props}>
-      <NavigationMenuLink render={<Link href={href}><div className="flex flex-col gap-1 text-sm">
+      <NavigationMenuLink render={<Link href={href}><div className="flex flex-col gap-1 text-2xl">
           <div className="leading-none font-medium">{title}</div>
           <div className="line-clamp-2 text-muted-foreground">{children}</div>
         </div></Link>} />

@@ -123,7 +123,7 @@
   from {left:-1000px;}
   to {left:0px}
 }
-@keyframes to-animate-2xl{
+@keyframes to-animate-xl{
   from {left:-2000px;}
   to {left:0px}
 }
@@ -141,7 +141,7 @@
     @apply text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl
   }
   .auto-sizing-base{
-    @apply text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl
+    @apply text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl
   }
   .auto-sizing-h2{
     @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl
@@ -168,12 +168,12 @@
   .to-animate-carousel{
     animation: to-animate 21s infinite linear;
   }
-  .to-animate-carousel:hover, .to-animate-2xl-carousel:hover{
+  .to-animate-carousel:hover, .to-animate-xl-carousel:hover{
     animation-play-state:paused;
   }
 }
 @media (min-width: 2000px){
   .to-animate-carousel{
-    animation: to-animate-2xl 17s infinite linear;
+    animation: to-animate-xl 17s infinite linear;
   }
 }

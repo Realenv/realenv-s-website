@@ -1,8 +1,8 @@
 @reference "tailwindcss";
 
 .headerComponent{
-    @apply xl:px-[15vw] xl:text-2xl fixed top-0 left-0 z-100 flex w-[100vw] justify-between px-[7vw] items-center;
+    @apply xl:px-[15vw] xl:text-2xl fixed top-0 left-0 z-100 flex w-[100vw] justify-between px-[7vw] items-center ;
 }
 .headerComponent > div{
-    @apply flex;
+    @apply flex items-center gap-x-7;
 }

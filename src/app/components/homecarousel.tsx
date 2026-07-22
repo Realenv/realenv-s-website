@@ -77,8 +77,18 @@ const HomeCarousel = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselNext disabled={false}/>
-          <CarouselPrevious disabled={false}/>
+          <div className="block min-sm:hidden">
+            <CarouselNext size={"icon-lg"} variant={"secondary"} disabled={false}/>
+            <CarouselPrevious size={"icon-lg"} variant={"secondary"} disabled={false}/>
+          </div>
+          <div className="hidden min-sm:block max-xl:hidden">
+            <CarouselNext size={"icon-xl"} variant={"secondary"} disabled={false}/>
+            <CarouselPrevious size={"icon-xl"} variant={"secondary"} disabled={false}/>
+          </div>
+          <div className="hidden sm:hidden xl:block">
+            <CarouselNext size={"icon-2xl"} variant={"secondary"} disabled={false}/>
+            <CarouselPrevious size={"icon-2xl"} variant={"secondary"} disabled={false}/>
+          </div>
         </Carousel>
       </div>
     </>

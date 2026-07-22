@@ -85,7 +85,7 @@ export function NavigationHeader() {
         {
             components.map((component, index) => (
                 <NavigationMenuItem key={index} className="flex">
-                    <NavigationMenuTrigger className="text-2xl p-5">{component.title}</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="2xl:text-2xl text-lg xl:text-xl p-5">{component.title}</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                         {component.sub.map((subComponent, subIndex) => (

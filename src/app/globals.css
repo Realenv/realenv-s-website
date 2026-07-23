@@ -128,6 +128,13 @@
   from {left:-2000px;}
   to {left:0px}
 }
+@keyframes to-move{
+  0% {transform:translate(-20px,20px);}
+  25% {transform:translate(20px,-20px);}
+  50% {transform:translate(-30px,20px);}
+  75% {transform:translate(-20px,-20px);}
+  100% {transform:translate(-20px,20px);}
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -176,20 +183,20 @@
       @apply text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-snug
   }
   .articleSection h3{
-      @apply uppercase font-extrabold pl-5 pt-6
+      @apply uppercase font-extrabold tracking-wider pl-5 pt-6
   }
   .articleSection h4{
-      @apply uppercase font-bold pl-9
+      @apply uppercase font-bold pl-9 tracking-tighter
   }
   .articleSection p{
       @apply pb-3 font-light
   }
-  .articleSection a{
+  .articleSection a, .link-style{
       @apply text-blue-700 visited:text-purple-700
   }
 }
 @media (min-width: 2000px){
   .to-animate-carousel{
-    animation: to-animate-xl 17s infinite linear;
+    animation: to-animate-xl 17s infinite ease-in;
   }
 }

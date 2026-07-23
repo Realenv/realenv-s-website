@@ -3,6 +3,7 @@ import HomeCarousel from "./components/homecarousel"
 import AboutMe from "./components/aboutme";
 import ComputerScience from "./components/computerscience";
 import HumanLanguagesBadges from "./components/humanlanguagesbadges";
+import MartialArts from "./components/martial-arts";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       </div>
       <ComputerScience/>
       <HumanLanguagesBadges/>
+      <MartialArts/>
     </>
   )
 }

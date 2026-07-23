@@ -76,7 +76,7 @@
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --radius: 0.825rem;
+  --radius: 0.225rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -133,10 +133,10 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground scroll-smooth;
   }
   html {
-    @apply font-sans;
+    @apply font-sans scroll-smooth;
   }
   .auto-sizing-hero-p{
     @apply text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl
@@ -151,10 +151,10 @@
     @apply px-5 h-9 text-sm sm:text-base sm:h-10 md:text-lg md:px-10 md:h-12 lg:text-xl lg:h-12 xl:px-15 xl:text-xl xl:h-14 2xl:text-2xl
   }
   .hero-style{
-    @apply px-[55px] sm:px-[15vw] xl:px-[25vw];
+    @apply px-[15px] xs:px-[25px] 2xs:px-[45px] sm:px-[15vw] xl:px-[25vw];
   }
   .hero-xl-style{
-    @apply px-[55px] sm:px-[11vw] xl:px-[20vw];
+    @apply px-[15px] xs:px-[25px] 2xs:px-[45px] sm:px-[11vw] xl:px-[20vw];
   }
   .dark .icon-to-invert{
     filter:invert(1);

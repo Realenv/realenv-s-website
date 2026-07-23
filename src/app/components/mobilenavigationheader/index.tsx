@@ -18,15 +18,15 @@ const components: {title: string, sub: { title: string; href: string }[]}[] = [
         sub: [
             {
                 title: "Biography",
-                href: "/aboutme/biography",
+                href: "/aboutme#biography",
             },
             {
                 title: "Social media",
-                href: "/aboutme/social-media",
+                href: "/aboutme#social-media",
             },
             {
                 title: "Phone & email",
-                href: "/aboutme/phone-and-email",
+                href: "/aboutme#phone-and-email",
             },
         ]
     },

@@ -18,19 +18,19 @@ const components: {title: string, sub: { title: string; href: string; descriptio
         sub: [
             {
                 title: "Biography",
-                href: "/aboutme/biography",
+                href: "/aboutme#biography",
                 description:
                 "A modal dialog that interrupts the user with important content and expects a response.",
             },
             {
                 title: "Social media",
-                href: "/aboutme/social-media",
+                href: "/aboutme#social-media",
                 description:
                 "For sighted users to preview content available behind a link.",
             },
             {
                 title: "Phone & email",
-                href: "/aboutme/phone-and-email",
+                href: "/aboutme#phone-and-email",
                 description:
                 "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
             },

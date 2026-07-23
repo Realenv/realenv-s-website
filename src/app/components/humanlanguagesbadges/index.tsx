@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import OpenBadge from "../openbadge";
+import Link from "next/link";
 
 const HumanLanguagesBadges = () => {
   return (
@@ -16,8 +17,8 @@ const HumanLanguagesBadges = () => {
           </div>
         </div>
         <div className="relative z-15 hero-xl-style gap-x-2 gap-y-1 flex justify-end flex-wrap">
-            <Button variant={"outline"} size={"autoSizing"}>My Skills</Button>
-            <Button size={"autoSizing"}>My Human Languages Skills</Button>
+            <Button variant={"outline"} size={"autoSizing"} nativeButton={false} render={<Link href="/skills"></Link>}>My Skills</Button>
+            <Button size={"autoSizing"} nativeButton={false} render={<Link href="/skills/human-languages"></Link>}>My Human Languages Skills</Button>
         </div>
     </div>
   )

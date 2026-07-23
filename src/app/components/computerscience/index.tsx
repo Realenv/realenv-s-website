@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import SkillIcons from "../skillicons";
+import Link from "next/link";
 
 const ComputerScience = () => {
   return (
@@ -11,8 +12,8 @@ const ComputerScience = () => {
          <SkillIcons/>
         </div>
         <div className="hero-xl-style flex justify-end flex-wrap gap-x-2 gap-y-1">
-            <Button variant={"outline"} size={"autoSizing"}>My Skills</Button>
-            <Button size={"autoSizing"}>My Computer science Skills</Button>
+            <Button variant={"outline"} size={"autoSizing"} nativeButton={false} render={<Link href="/skills"></Link>}>My Skills</Button>
+            <Button size={"autoSizing"} nativeButton={false} render={<Link href="/skills/computer-sciences"></Link>}>My Computer science Skills</Button>
         </div>
     </div>
   )

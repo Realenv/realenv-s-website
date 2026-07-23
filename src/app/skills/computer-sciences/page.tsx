@@ -1,10 +1,9 @@
 import SkillIcons from "@/app/components/skillicons";
-import styles from "./index.module.css";
 import Link from "next/link";
 
 export default function Empty (){
     return (
-        <div className={`flex flex-col hero-style ${styles.articleSection}`}>
+        <div className="flex flex-col hero-style articleSection">
             <div>
                 <h3>What kind of technologies I'm mastering now ?</h3>
                 <SkillIcons/>

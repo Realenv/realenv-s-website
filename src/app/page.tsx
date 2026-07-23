@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <HomeCarousel/>
-      <div className="height-of-header bg-background/95 z-50 sticky top-0"></div>
+      <div className="height-of-header bg-background/95 z-22 sticky top-0"></div>
       <div className="w-full flex justify-center">
         <AboutMe/>
       </div>

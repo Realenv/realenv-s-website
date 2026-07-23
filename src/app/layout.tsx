@@ -28,9 +28,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col justify-between overflow-x-hidden">
         <Header/>
-
-      <div className="height-of-header w-full"></div>
-        {children}
+        <div className="height-of-header sticky top-0 left-0 z-20 bg-background w-full"></div>
+        <div className="grow">{children}</div>
+        <div className="height-of-header sticky top-0 left-0 z-23 bg-foreground w-full"></div>
         <Footer/>
       </body>
     </html>

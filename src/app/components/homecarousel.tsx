@@ -54,7 +54,7 @@ const HomeCarousel = () => {
   const [backgroundColor, setBackgroundColor] = React.useState(items[0].bg);
   return (
     <>
-      <div className="height-of-header w-full z-25 fixed top-0" style={{background: backgroundColor}}></div>
+      <div className="height-of-header w-full z-21 fixed top-0" style={{background: backgroundColor}}></div>
       <div className="hero-style" style={{background: backgroundColor}}>
         
         <Carousel

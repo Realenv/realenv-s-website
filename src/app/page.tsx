@@ -16,6 +16,7 @@ const Home = () => {
       <ComputerScience/>
       <HumanLanguagesBadges/>
       <MartialArts/>
+      <div className="pb-6 w-full h-2"></div>
     </>
   )
 }

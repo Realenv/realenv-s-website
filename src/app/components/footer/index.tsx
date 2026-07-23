@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <footer className={`${styles.footerStyle} auto-sizing-base ${pt_sans.variable}`}>
             <div>
-                <Image loading="lazy" src="/realenv.svg" width={256} height={256} alt="realenv" className="shadow-2xl rounded-xs shadow-white/10 dark:shadow-gray-600" />
+                <Image loading="lazy" src="/realenv.svg" width={256} height={256} alt="realenv" className="shadow-2xl rounded-xs shadow-white/5 dark:shadow-neutral-600/50" />
             </div>
             <div>
                 <h3>Common links</h3>

@@ -30,7 +30,7 @@ export default function RootLayout({
         <Header/>
         <div className="height-of-header sticky top-0 left-0 z-20 bg-background w-full"></div>
         <div className="grow">{children}</div>
-        <div className="height-of-header sticky top-0 left-0 z-23 bg-foreground w-full"></div>
+        <div className="height-of-header sticky top-0 mt-5 left-0 z-23 bg-foreground w-full"></div>
         <Footer/>
       </body>
     </html>

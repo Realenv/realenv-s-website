@@ -25,7 +25,7 @@ const Footer = () => {
                     <Link href="/projects">Projects & contributions</Link>
                 </div>
             </div>
-            <div>
+            <div id="phone-and-email">
                 <h3>Contacts</h3>
                 <div>
                     <Link href=""><Phone style={{height:`${iconSize}px`, width:`${iconSize}px`}}/>: --------</Link>

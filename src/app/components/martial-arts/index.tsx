@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const MartialArts = (props: {includeBtns?: boolean}) => {
   return (
-    <div className="flex flex-col gap-y-5 justify-center">
+    <div className="pt-9 flex flex-col gap-y-2 justify-center">
         <h2 className="relative z-15 hero-xl-style auto-sizing-h2 font-extrabold uppercase sm-15">martial arts skills</h2>
         <div className="flex justify-center items-center bg-red-500 hero-style py-5 gap-3 xl:gap-7">
           <h2 className="capitalize font-bold text-3xl text-background">wing<br/> chun</h2>

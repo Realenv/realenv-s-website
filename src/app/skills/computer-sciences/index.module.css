@@ -1,0 +1,18 @@
+@reference "tailwindcss";
+@layer utilities{
+    .articleSection{
+        @apply text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-snug
+    }
+    .articleSection h3{
+        @apply uppercase font-extrabold pl-5 pt-6
+    }
+    .articleSection h4{
+        @apply uppercase font-bold pl-9
+    }
+    .articleSection p{
+        @apply pb-3 font-light
+    }
+    .articleSection a{
+        @apply text-blue-700 visited:text-purple-700
+    }
+}

@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -27,6 +28,7 @@ export default function RootLayout({
       className={`h-full antialiased ${poppins.variable}`}
     >
       <body className="min-h-full flex flex-col justify-between overflow-x-hidden">
+        <SpeedInsights/>
         <Header/>
         <div className="height-of-header sticky top-0 left-0 z-20 bg-background w-full"></div>
         <div className="grow">{children}</div>

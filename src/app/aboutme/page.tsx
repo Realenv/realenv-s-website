@@ -6,7 +6,8 @@ export default function PhoneAndEmail(){
     const iconSize = "31";
     return (
     <div className="flex flex-col items-center gap-17 mt-25">
-        <div id="biogrgaphy" className="max-w-[1250px] max-sm:flex-wrap px-10 gap-5 flex justify-center">
+        <h2 id="biography" className="auto-sizing-hero-p uppercase font-bold scroll-mt-31">Biography</h2>
+        <div className="max-w-[1250px] max-sm:flex-wrap px-10 gap-5 flex justify-center ">
             <div className="flex justify-center items-center">
                 <Image src="/realenv.svg" alt="RealEnv" width={256} height={256} className="rounded-full object-contain min-w-[256px] icon-to-invert"/>
             </div>
@@ -18,7 +19,8 @@ export default function PhoneAndEmail(){
                 </div>
             </div>
         </div>
-        <div className="flex flex-col" id="social-media">
+        <h2 className="auto-sizing-hero-p uppercase font-bold scroll-mt-31" id="social-media">Social media</h2>
+        <div className="flex flex-col scroll-mt-21">
             <div className="max-w-[1250px] max-sm:flex-wrap px-10 gap-5 flex justify-center">
                 <div className="flex justify-center items-center">
                     <Image src="/icons/github.svg" alt="RealEnv" width={256} height={256} className="rounded-full object-contain min-w-[256px] icon-to-invert"/>

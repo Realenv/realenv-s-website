@@ -20,7 +20,7 @@ const Footer = () => {
                 <h3>Common links</h3>
                 <div>
                     <Link href="/">Home</Link>
-                    <Link href="/aboutme/biograghy">Biography</Link>
+                    <Link href="/aboutme#biography">Biography</Link>
                     <Link href="/skills">Skills</Link>
                     <Link href="/projects">Projects & contributions</Link>
                 </div>

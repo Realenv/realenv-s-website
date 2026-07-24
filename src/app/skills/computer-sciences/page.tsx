@@ -1,5 +1,6 @@
 import SkillIcons from "@/app/components/skillicons";
 import Link from "next/link";
+import MyLearningPath from "@/app/components/mylearningpath";
 
 export default function Empty (){
     return (
@@ -47,6 +48,9 @@ export default function Empty (){
                     <h4>1- Docker</h4>
                     <p><Link href="https://www.docker.com/">Docker</Link> was launched in 2013, it is very important to create, run images and managing containers today, for every developpers, from devops to cybersecurity</p>
                 </div>
+            </div>
+            <div id="learning-path" className="scroll-mt-20">
+                <MyLearningPath/>
             </div>
         </div>
     );

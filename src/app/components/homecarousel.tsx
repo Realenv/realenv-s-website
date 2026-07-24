@@ -35,7 +35,7 @@ const HomeCarousel = () => {
       description: "I learn Next.js with a couple of powerful react libraries and more, like tailwind, shadcn and others, and so by building this website from scratch using most recent web technologies.",
       bg: "hsl(50 35% 50%)",
       firstBtnText: "My learning Path",
-      firstBtnHref: "/skills/computer-sciences#nextjs",
+      firstBtnHref: "/skills/computer-sciences#learning-path",
       secondBtnText: "About next.js",
       secondBtnHref: "https://nextjs.org/"
     },

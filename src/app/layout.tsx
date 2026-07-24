@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -29,6 +30,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col justify-between overflow-x-hidden">
         <SpeedInsights/>
+        <Analytics/>
         <Header/>
         <div className="height-of-header sticky top-0 left-0 z-20 bg-background w-full"></div>
         <div className="grow">{children}</div>

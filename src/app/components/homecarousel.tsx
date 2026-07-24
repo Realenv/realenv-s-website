@@ -35,7 +35,7 @@ const HomeCarousel = () => {
       description: "I learn Next.js with a couple of powerful react libraries and more, like tailwind, shadcn and others, and so by building this website from scratch using most recent web technologies.",
       bg: "hsl(50 35% 50%)",
       firstBtnText: "My learning Path",
-      firstBtnHref: "/skills/computer-sciences/nextjs",
+      firstBtnHref: "/skills/computer-sciences#learning-path",
       secondBtnText: "About next.js",
       secondBtnHref: "https://nextjs.org/"
     },
@@ -44,9 +44,9 @@ const HomeCarousel = () => {
       description: "I am learning the initial vocabulary list of the first band of the HSK3.0, because it is the largest recognized vocabulary list in chinese.",
       bg: "hsl(1 50% 50%)",
       firstBtnText: "Why initial HSK3.0 band 1",
-      firstBtnHref: "Why initial HSK3.0 band 1",
+      firstBtnHref: "/skills/human-languages#why-hsk",
       secondBtnText: "My current level",
-      secondBtnHref: "/skills/human-languages/chinese"
+      secondBtnHref: "/skills/human-languages#chinese"
     },
     {
       title: "Russian",
@@ -55,14 +55,23 @@ const HomeCarousel = () => {
       firstBtnText: "Why TRKI 1",
       firstBtnHref: "Why TRKI 1",
       secondBtnText: "My current level",
-      secondBtnHref: "/skills/human-languages/russian"
+      secondBtnHref: "/skills/human-languages#russian"
+    },
+    {
+      title: "Wing Chun",
+      description: "I am practising wing chun, because it is nothing more than a perfect martial art, focused on speed, ideologie, weak points, and efficiency.",
+      bg: "hsl(358, 100%, 59%)",
+      firstBtnText: "Why Wing Chun",
+      firstBtnHref: "/skills/human-languages#why-trki",
+      secondBtnText: "My current level",
+      secondBtnHref: "/skills/martial-arts#wing-chun"
     }
   ];
   const [backgroundColor, setBackgroundColor] = React.useState(items[0].bg);
   return (
     <>
       <div className="height-of-header w-full z-21 fixed top-0" style={{background: backgroundColor}}></div>
-      <div className="hero-style" style={{background: backgroundColor}}>
+      <div className="hero-style-carousel" style={{background: backgroundColor}}>
         
         <Carousel
           opts={{loop:true}}
@@ -74,7 +83,7 @@ const HomeCarousel = () => {
         >
           <CarouselContent >
             {items.map((item, index) => (
-              <CarouselItem key={index} className="box-border flex flex-col justify-center h-[100vh] ">
+              <CarouselItem key={index} className="box-border flex flex-col justify-center h-[calc(100vh-51px)] sm:h-[calc(100vh-59px)] md:h-[calc(100vh-65px)] xl:h-[calc(100vh-75px)] 2xl:h-[calc(100vh-85px)]">
                 <h2 className="pl-5 uppercase auto-sizing-h2 font-extrabold">{item.title}</h2>
                 <p className="auto-sizing-hero-p font-light m-2">{item.description}</p>
                 <div className="flex flex-wrap gap-x-2 gap-y-1 justify-end gap-x-3">

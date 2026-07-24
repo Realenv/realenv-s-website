@@ -3,7 +3,7 @@ import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Tabl
 
 export default function Empty (){
     return (
-        <>
+        <div id="wing-chun">
             <MartialArts includeBtns={false}/>
             <Table>
                 <TableCaption>What I should doing to mastering my Wing Chun</TableCaption>
@@ -54,6 +54,6 @@ export default function Empty (){
                     </TableRow>
                 </TableBody>
             </Table>
-        </>
+        </div>
     );
 }

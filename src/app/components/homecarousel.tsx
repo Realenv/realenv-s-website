@@ -35,7 +35,7 @@ const HomeCarousel = () => {
       description: "I learn Next.js with a couple of powerful react libraries and more, like tailwind, shadcn and others, and so by building this website from scratch using most recent web technologies.",
       bg: "hsl(50 35% 50%)",
       firstBtnText: "My learning Path",
-      firstBtnHref: "/skills/computer-sciences/nextjs",
+      firstBtnHref: "/skills/computer-sciences#nextjs",
       secondBtnText: "About next.js",
       secondBtnHref: "https://nextjs.org/"
     },
@@ -46,7 +46,7 @@ const HomeCarousel = () => {
       firstBtnText: "Why initial HSK3.0 band 1",
       firstBtnHref: "Why initial HSK3.0 band 1",
       secondBtnText: "My current level",
-      secondBtnHref: "/skills/human-languages/chinese"
+      secondBtnHref: "/skills/human-languages#chinese"
     },
     {
       title: "Russian",
@@ -55,7 +55,16 @@ const HomeCarousel = () => {
       firstBtnText: "Why TRKI 1",
       firstBtnHref: "Why TRKI 1",
       secondBtnText: "My current level",
-      secondBtnHref: "/skills/human-languages/russian"
+      secondBtnHref: "/skills/human-languages#russian"
+    },
+    {
+      title: "Wing Chun",
+      description: "I am practising wing chun, because it is nothing more than a perfect martial art, focused on speed, ideologie, weak points, and efficiency.",
+      bg: "hsl(358, 100%, 59%)",
+      firstBtnText: "Why Wing Chun",
+      firstBtnHref: "Why TRKI 1",
+      secondBtnText: "My current level",
+      secondBtnHref: "/skills/martial-arts#wing-chun"
     }
   ];
   const [backgroundColor, setBackgroundColor] = React.useState(items[0].bg);

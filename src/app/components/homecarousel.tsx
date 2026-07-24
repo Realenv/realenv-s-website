@@ -44,7 +44,7 @@ const HomeCarousel = () => {
       description: "I am learning the initial vocabulary list of the first band of the HSK3.0, because it is the largest recognized vocabulary list in chinese.",
       bg: "hsl(1 50% 50%)",
       firstBtnText: "Why initial HSK3.0 band 1",
-      firstBtnHref: "Why initial HSK3.0 band 1",
+      firstBtnHref: "/skills/human-languages#why-hsk",
       secondBtnText: "My current level",
       secondBtnHref: "/skills/human-languages#chinese"
     },
@@ -62,7 +62,7 @@ const HomeCarousel = () => {
       description: "I am practising wing chun, because it is nothing more than a perfect martial art, focused on speed, ideologie, weak points, and efficiency.",
       bg: "hsl(358, 100%, 59%)",
       firstBtnText: "Why Wing Chun",
-      firstBtnHref: "Why TRKI 1",
+      firstBtnHref: "/skills/human-languages#why-trki",
       secondBtnText: "My current level",
       secondBtnHref: "/skills/martial-arts#wing-chun"
     }

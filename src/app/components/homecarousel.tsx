@@ -62,7 +62,7 @@ const HomeCarousel = () => {
   return (
     <>
       <div className="height-of-header w-full z-21 fixed top-0" style={{background: backgroundColor}}></div>
-      <div className="hero-style" style={{background: backgroundColor}}>
+      <div className="hero-style-carousel" style={{background: backgroundColor}}>
         
         <Carousel
           opts={{loop:true}}
@@ -74,7 +74,7 @@ const HomeCarousel = () => {
         >
           <CarouselContent >
             {items.map((item, index) => (
-              <CarouselItem key={index} className="box-border flex flex-col justify-center h-[100vh] ">
+              <CarouselItem key={index} className="box-border flex flex-col justify-center h-[calc(100vh-51px)] sm:h-[calc(100vh-59px)] md:h-[calc(100vh-65px)] xl:h-[calc(100vh-75px)] 2xl:h-[calc(100vh-85px)]">
                 <h2 className="pl-5 uppercase auto-sizing-h2 font-extrabold">{item.title}</h2>
                 <p className="auto-sizing-hero-p font-light m-2">{item.description}</p>
                 <div className="flex flex-wrap gap-x-2 gap-y-1 justify-end gap-x-3">

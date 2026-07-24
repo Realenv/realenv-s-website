@@ -160,6 +160,9 @@
   .hero-style{
     @apply px-[15px] xs:px-[25px] 2xs:px-[45px] sm:px-[15vw] xl:px-[25vw];
   }
+  .hero-style-carousel{
+    @apply px-[55px] xs:px-[60px] 2xs:px-[65px] sm:px-[15vw] xl:px-[25vw];
+  }
   .hero-xl-style{
     @apply px-[15px] xs:px-[25px] 2xs:px-[45px] sm:px-[11vw] xl:px-[20vw];
   }

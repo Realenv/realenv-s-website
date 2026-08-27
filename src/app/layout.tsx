@@ -27,6 +27,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  openGraph: {
+    images: '/realenv.png',
+  },
   title: "Realenv's website I share my achivements & skills with you",
   description: "This is Realenv's website, realenv is fullstack dev who is learning russian and chinese, he would like to go to the MSU Moscow University.",
 };

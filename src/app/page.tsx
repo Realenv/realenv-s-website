@@ -11,6 +11,9 @@ const Home = () => {
       <HomeCarousel/>
       <div className="height-of-header bg-background/95 z-22 sticky top-0"></div>
       <div className="w-full flex justify-center">
+        <h1 className="auto-sizing-hero-p mb-3 uppercase font-extralight">about realenv and all the skills he practising</h1>
+      </div>
+      <div className="w-full flex justify-center">
         <AboutMe/>
       </div>
       <ComputerScience/>

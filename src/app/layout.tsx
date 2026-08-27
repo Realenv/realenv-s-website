@@ -28,7 +28,12 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    title: "Realenv's portfolio: skills & achievements",
+    description:"This is Realenv's portfolio, I share my achievements & skills with you in this website",
+    url: "https://realenv.vercel.app/",
     images: '/realenv.png',
+    type: "website",
+    siteName: "Realenv's portfolio",
   },
   title: "Realenv's website I share my achivements & skills with you",
   description: "Hi, Just call me realenv, I would like to be more and more professional over the years, I am learning a lot of things, like coding in react, using next.js, i love rust, and I want to go to the ITMO university of St. Petersburg.",

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     images: '/realenv.png',
   },
   title: "Realenv's website I share my achivements & skills with you",
-  description: "This is Realenv's website, realenv is fullstack dev who is learning russian and chinese, he would like to go to the MSU Moscow University.",
+  description: "Hi, Just call me realenv, I would like to be more and more professional over the years, I am learning a lot of things, like coding in react, using next.js, i love rust, and I want to go to the ITMO university of St. Petersburg.",
 };
 
 export default function RootLayout({

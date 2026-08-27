@@ -14,7 +14,23 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  title: "Realenv's website",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    images: '/realenv.png',
+  },
+  title: "Realenv's website I share my achivements & skills with you",
   description: "This is Realenv's website, realenv is fullstack dev who is learning russian and chinese, he would like to go to the MSU Moscow University.",
 };
 

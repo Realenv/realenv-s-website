@@ -49,6 +49,9 @@ export default function RootLayout({
       lang="en"
       className={`h-full antialiased ${poppins.variable}`}
     >
+      <head>
+        <meta name="google-site-verification" content="lcAlfV7jth-HgzdKqI_ZPK5pBqLuBVAFl3wCnKfyqc0" />
+      </head>
       <body className="min-h-full flex flex-col justify-between overflow-x-hidden">
         <SpeedInsights/>
         <Analytics/>
